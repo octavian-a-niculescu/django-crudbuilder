@@ -8,7 +8,7 @@ from collections import namedtuple
 try:
     from django.utils.encoding import force_text
 except ImportError:
-    from django.utils.encoding import force_unicode as force_text
+    from django.utils.encoding import force_str as force_text
 
 register = template.Library()
 Field = namedtuple('Field', 'name verbose_name')
